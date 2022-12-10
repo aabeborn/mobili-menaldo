@@ -1,4 +1,5 @@
 {
-    "extends": ["eslint:recommended", "turbo", "plugin:prettier/recommended"],
-    "plugins": ["prettier"]
+	"extends": ["eslint:recommended", "turbo", "prettier"],
+	"plugins": ["prettier"],
+	"root": true
 }

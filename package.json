@@ -6,7 +6,12 @@
 		"apps/*"
 	],
 	"scripts": {
-		"format": "prettier --write ."
+		"prepare": "husky install",
+		"lint": "turbo run lint",
+		"build": "turbo run build",
+		"dev": "turbo run dev --parallel",
+		"format": "prettier --write .",
+		"lint:staged": "pnpm run format && turbo lint:staged"
 	},
 	"engines": {
 		"node": ">=16.8.0"
@@ -14,8 +19,11 @@
 	"packageManager": "pnpm@7.18.1",
 	"devDependencies": {
 		"eslint": "^8.29.0",
+		"eslint-config-prettier": "^8.5.0",
 		"eslint-config-turbo": "^0.0.7",
 		"eslint-plugin-prettier": "^4.2.1",
+		"husky": "^8.0.2",
+		"lint-staged": "^13.1.0",
 		"prettier": "^2.8.1",
 		"turbo": "^1.6.3"
 	}
