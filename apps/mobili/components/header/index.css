@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__links {
+        display: inline-flex;
+        list-style: none;
+        flex: 1 0 0;
+        justify-content: flex-end;
+        
+        &__link {
+            padding:0 2rem;
+            text-transform: uppercase;    
+            font-size: 0.85rem;        
+        }
+    }
+}
