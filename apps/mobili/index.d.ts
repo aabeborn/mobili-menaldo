@@ -1,3 +1,3 @@
 declare module '*.svg?component' {
-	export default React.ReactComponent
+	export default React.PureComponent
 }

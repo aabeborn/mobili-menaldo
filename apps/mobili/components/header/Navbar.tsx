@@ -22,10 +22,10 @@ export default function Navbar() {
 			items.push(
 				<li
 					key={value}
-					className={`text-sm uppercase hover:text-gold m-8 md:mx-8 md:my-0 ${
+					className={`text-sm uppercase m-8 md:mx-8 md:my-0 border-b-2 border-solid border-transparent ${
 						path?.startsWith(key)
-							? ' border-gold border-solid border-b-2'
-							: ''
+							? 'text-gold'
+							: 'hover:border-gold'
 					}`}
 				>
 					<Link href={key}>{value}</Link>
