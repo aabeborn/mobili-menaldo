@@ -7,11 +7,11 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-      colors:{
-        gold: "#CC9900"
-      }
-    },
+			colors: {
+				gold: '#CC9900',
+			},
+		},
 	},
-  darkMode: "class",
+	darkMode: 'class',
 	plugins: [],
 }

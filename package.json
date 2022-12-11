@@ -11,7 +11,10 @@
 		"build": "turbo run build",
 		"dev": "turbo run dev --parallel",
 		"format": "prettier --write .",
-		"lint:staged": "pnpm run format && turbo lint:staged"
+		"lint:staged": "turbo lint:staged"
+	},
+	"lint-staged": {
+		"*": "pnpm run format"
 	},
 	"engines": {
 		"node": ">=16.8.0"
